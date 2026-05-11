@@ -28,7 +28,8 @@
 - Network: Packet analysis, IDS/IPS
 - Analysis: YARA, PE analysis, IOC hunting
 - Cloud: Kubernetes, AWS (in progress)
-
+- Detection: YARA, entropy analysis, statistical modeling
+  
 ---
 
 ## 📰 Newsletter
