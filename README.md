@@ -13,11 +13,14 @@
 
 ---
 
-## 🤝 Open Source Contribution
+🤝 Open Source Contribution
 
-- 🐛 Reported issue on **Wazuh** official repository
-  - [Sysmon EventID 13 arrives in archives.json but no alert generated (Wazuh 4.9.0 Docker) #35707](https://github.com/wazuh/wazuh/issues/35707)
-  - Investigated rule chain processing difference between Security channel and Sysmon channel events
+* 🐛 Reported issues on Wazuh official repository
+   * **[Sysmon EventID 13 arrives in archives.json but no alert generated (Wazuh 4.9.0 Docker) #35707](https://github.com/wazuh/wazuh/issues/35707)**
+      * Investigated rule chain processing difference between Security channel and Sysmon channel events
+   * **[Rules/Decoders: Custom rules using if_sid for windows_eventchannel events not firing in Wazuh 4.9.0 — if_group works as workaround #36029](https://github.com/wazuh/wazuh/issues/36029)**
+      * Identified undocumented breaking change in if_sid chaining behavior for windows_eventchannel events between 4.7.5 and 4.9.0
+      * Discovered discrepancy between wazuh-logtest output and live analysisd pipeline
     
 ---    
 
