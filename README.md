@@ -13,6 +13,14 @@
 
 ---
 
+## 🤝 Open Source Contribution
+
+- 🐛 Reported issue on **Wazuh** official repository
+  - [Sysmon EventID 13 arrives in archives.json but no alert generated (Wazuh 4.9.0 Docker) #35707](https://github.com/wazuh/wazuh/issues/35707)
+  - Investigated rule chain processing difference between Security channel and Sysmon channel events
+    
+---    
+
 ## 🎯 Focus Areas
 
 - 🖥 **Security Monitoring** — 24/7 SOC, SIEM Operation
