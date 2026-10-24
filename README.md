@@ -1,6 +1,6 @@
 # Hi, I'm Zen 👋
 
-**Security Monitoring Engineer** | Seoul, Korea  
+**Aspiring Security Monitoring Engineer** | Seoul, Korea  
 *SOC • Network Monitoring • Threat Detection*
 
 ---
