@@ -9,6 +9,7 @@
 
 - 🛡 **Wazuh SIEM** — Real-time log monitoring & alert correlation
 - 📡 **Anomaly Detection** — Entropy-based network behavior analysis
+  ([wazuh-slack-alertbot](https://github.com/zeldaim/wazuh-slack-alertbot) — Shannon/ApEn on SSH brute-force)
 - 🔬 **Malware Analysis** — Incident triage & IOC extraction
 
 ---
