@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=4D96FF&center=true&vCenter=true&width=720&lines=Software+Supply+Chain+Security+%F0%9F%94%97;Detection+Engineering+%F0%9F%9B%A1%EF%B8%8F;Aspiring+Open+Source+Security+Engineer+%F0%9F%8C%B1;Not+just+finding+vulnerabilities+%E2%80%94+making+fixes+verifiable" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=4D96FF&center=true&vCenter=true&width=820&lines=Software+Supply+Chain+Security+%F0%9F%94%97;Detection+Engineering+%F0%9F%9B%A1%EF%B8%8F;Aspiring+Open+Source+Security+Engineer+%F0%9F%8C%B1;Not+just+finding+bugs+%E2%80%94+making+fixes+verifiable" />
 </p>
 
 <p align="center">
