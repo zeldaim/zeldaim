@@ -91,6 +91,16 @@
 
 ---
 
+### 🔧 Hardware Background · Next
+
+| | |
+|:-:|---|
+| 🧩 | **KAIST IDEC semiconductor design training** — 67 courses · 831 h (2024.04 – 2026.03): digital design (Verilog, RTL-to-GDSII), computer architecture, AI accelerators, embedded networks (CAN · FlexRay) |
+| 📟 | **Embedded systems coursework** — in progress |
+| 🏭 | **Next: IoT / OT security project** <img src="https://img.shields.io/badge/status-planned-FFB703?style=flat-square" /> — connecting hardware knowledge with detection and supply chain security |
+
+---
+
 ### 📜 Certifications
 
 <img src="https://img.shields.io/badge/RHCSA-Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white" />
