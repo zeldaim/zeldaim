@@ -1,70 +1,111 @@
-# Hi, I'm Zen 👋
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,25:FFD93D,50:6BCB77,75:4D96FF,100:9B5DE5&height=210&section=header&text=Hi,%20I'm%20Zen%20👋&fontColor=ffffff&fontSize=60&fontAlignY=36&animation=fadeIn" />
+</p>
 
-### Aspiring Open Source Security Engineer
-**Software Supply Chain Security · DevSecOps · Detection Engineering**
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=4D96FF&center=true&vCenter=true&width=720&lines=Software+Supply+Chain+Security+%F0%9F%94%97;Detection+Engineering+%F0%9F%9B%A1%EF%B8%8F;Aspiring+Open+Source+Security+Engineer+%F0%9F%8C%B1;Not+just+finding+vulnerabilities+%E2%80%94+making+fixes+verifiable" />
+</p>
 
-I want to do more than use security tools.
-I want to understand how they work, investigate security problems, fix what I find, and help make open-source software more secure.
-
-My long-term goal is to become a security engineer who can identify vulnerabilities, understand their root causes, and design practical defensive systems.
-
----
-
-## 🔬 What I'm Working On
-
-- **Software Supply Chain Security**
-  - API-BOM (CycloneDX) and SBOM (Syft → Dependency-Track) for the same service, linked endpoint → code path → package → CVE
-  - Reachability + VEX: of 403 unique CVEs, 309 (77%) were not reachable from any endpoint (measured after fixing 5 bugs in my own analyzer)
-  - GitHub Actions that regenerate the SBOM / API-BOM on pull requests and on a daily schedule
-  - Next: blocking policy checks in CI, image signing (Cosign), provenance (SLSA)
-
-- **Security Monitoring & Detection**
-  - Wazuh rules generated from an approved OpenAPI allowlist and verified with `wazuh-logtest`
-  - Found a deployed BOLA rule that worked backwards (blocked attempts alerted, successful enumeration missed) and fixed it
-  - Entropy-based (Shannon / ApEn) SSH brute-force detection
-
-- **Cloud & Infrastructure Security**
-  - AWS, Azure, Linux, Kubernetes (preparing for CKA)
-  - Terraform checked without a cloud account: `terraform test` with mock providers, Trivy misconfiguration scan
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-Supply%20Chain%20Security-FF6B6B?style=flat-square" />
+  <img src="https://img.shields.io/badge/Focus-Detection%20Engineering-FFB703?style=flat-square" />
+  <img src="https://img.shields.io/badge/Interest-OpenSSF-6BCB77?style=flat-square" />
+  <img src="https://img.shields.io/badge/Seoul-Korea-4D96FF?style=flat-square" />
+</p>
 
 ---
 
-## 🤝 Open Source Security
+### 🌈 About me
 
-I believe meaningful open-source contribution starts with understanding problems, not just submitting code.
-
-Investigated and reported issues in the official Wazuh repository:
-
-- **[#35707](https://github.com/wazuh/wazuh/issues/35707)** — Sysmon EventID 13 reaches `archives.json` but no alert is generated (4.9.0 Docker)
-  - Traced the difference in rule-chain processing between Security-channel and Sysmon-channel events
-- **[#36029](https://github.com/wazuh/wazuh/issues/36029)** — Custom `if_sid` rules for `windows_eventchannel` stop firing in 4.9.0; `if_group` works as a workaround
-  - Behavior change between 4.7.5 and 4.9.0, and `wazuh-logtest` output differing from the live `analysisd` pipeline
-
-I'm interested in contributing to the open-source security ecosystem, particularly **OpenSSF** projects, software supply chain security, and security automation.
+> 🔍 I don't stop at running security tools — I **check whether their results are right**.<br>
+> 🧪 My own analyzers and rules get **tested before I trust them**.<br>
+> 📝 I record **what failed** as carefully as what worked.<br>
+> 🔧 Career switcher into security, with a **hardware** background (KAIST IDEC · 831 h of semiconductor design courses).
 
 ---
 
-## 🛠 Selected Projects
+### 🎯 What I'm Working On
 
-| Project | What it shows |
-|---|---|
-| [multicloud-dr-petclinic](https://github.com/zeldaim/multicloud-dr-petclinic) | AWS → Azure DR (Site-to-Site VPN, DMS replication). Failover procedure re-verified locally: RTO 18.7 s, RPO 0 |
-| [soc-detection-notes](https://github.com/zeldaim/soc-detection-notes) | Wazuh home SOC lab — MITRE-based rules (T1547, T1046) and SIEM incident write-ups |
-| [wazuh-slack-alertbot](https://github.com/zeldaim/wazuh-slack-alertbot) | Wazuh → Slack alerting with entropy-based SSH brute-force analysis |
-| API security · supply chain | API-BOM / SBOM / VEX / reachability and automated Wazuh rule generation (public release in preparation) |
-
----
-
-## 📰 Writing
-
-**[Signal & Threat](https://zeldaim.substack.com/)**
-
-Security research and technical analysis on software supply chain security, application security, and emerging threats.
+| | Area | What I actually did |
+|:-:|---|---|
+| 🔗 | **Software supply chain** | API-BOM (CycloneDX) + SBOM (Syft → Dependency-Track) linked endpoint → code path → package → CVE. **309 of 403 CVEs (77%) unreachable** from any endpoint — measured after fixing 5 bugs in my own analyzer |
+| 🛡️ | **Detection engineering** | Wazuh rules generated from an approved OpenAPI allowlist, verified with `wazuh-logtest`. Found and fixed a deployed BOLA rule that **worked backwards** |
+| ☁️ | **Infrastructure security** | Terraform checked without a cloud account (`terraform test` + mocks, Trivy, Checkov). Replaced an `AdministratorAccess` role with split **least-privilege** roles and an IAM action checker |
+| 🚀 | **Next** | Blocking policy checks in CI · Cosign signing · SLSA provenance · OpenSSF Scorecard |
 
 ---
 
-## 🎯 My Direction
+### 🤝 Open Source
 
-I want to contribute to open-source security projects, learn from experienced engineers, and help build safer software ecosystems.
+<p>
+  <a href="https://github.com/wazuh/wazuh/issues/35707"><img src="https://img.shields.io/badge/wazuh%2Fwazuh-%2335707-3595F9?style=for-the-badge" /></a>
+  <a href="https://github.com/wazuh/wazuh/issues/36029"><img src="https://img.shields.io/badge/wazuh%2Fwazuh-%2336029-9B5DE5?style=for-the-badge" /></a>
+</p>
 
-**Not just finding vulnerabilities, but understanding why they exist and helping prevent them.**
+- **#35707** — Sysmon EventID 13 reaches `archives.json` but no alert fires (4.9.0) → traced the rule-chain difference between Security- and Sysmon-channel events
+- **#36029** — Custom `if_sid` rules for `windows_eventchannel` stop firing in 4.9.0 (`if_group` works) → behavior change since 4.7.5, and `wazuh-logtest` differing from live `analysisd`
+
+---
+
+### 🧰 Tech Stack
+
+**🔗 Supply chain · AppSec**<br>
+<img src="https://img.shields.io/badge/CycloneDX-FF6B6B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Syft%20%2F%20Grype-FF8E72?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Dependency--Track-FFA94D?style=for-the-badge" />
+<img src="https://img.shields.io/badge/VEX-FFB703?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=trivy&logoColor=white" />
+<img src="https://img.shields.io/badge/Checkov-7B42BC?style=for-the-badge" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+
+**🛡️ Detection · Response**<br>
+<img src="https://img.shields.io/badge/Wazuh-3595F9?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Suricata-EF8F1C?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Event--Driven%20Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
+<img src="https://img.shields.io/badge/pfSense-212121?style=for-the-badge&logo=pfsense&logoColor=white" />
+<img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge" />
+
+**☁️ Cloud · Infra**<br>
+<img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+<img src="https://img.shields.io/badge/RHEL%20(RHCSA)-EE0000?style=for-the-badge&logo=redhat&logoColor=white" />
+
+**💻 Language**<br>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B" />
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
+<img src="https://img.shields.io/badge/HCL-6BCB77?style=for-the-badge" />
+
+---
+
+### 🗂️ Projects
+
+| | Project | Highlight |
+|:-:|---|---|
+| ☁️ | **[Multi-Cloud DR — AWS → Azure](https://github.com/zeldaim/multicloud-dr-petclinic)** | Site-to-Site VPN · DMS · Route 53 / CloudFront failover (team). Re-verified locally: <img src="https://img.shields.io/badge/RTO-18.7s-6BCB77?style=flat-square" /> <img src="https://img.shields.io/badge/RPO-0-4D96FF?style=flat-square" /> <img src="https://img.shields.io/badge/terraform%20test-8%2F8-9B5DE5?style=flat-square" /> |
+| 🔗 | **API Security · Supply Chain** | API-BOM / SBOM / VEX / reachability + automated Wazuh rules (team final project) <img src="https://img.shields.io/badge/release-in%20preparation-FFB703?style=flat-square" /> |
+| 🛡️ | **[SOC Detection Notes](https://github.com/zeldaim/soc-detection-notes)** | Wazuh home SOC lab — MITRE rules (T1547, T1046) and SIEM incident write-ups |
+| 🔔 | **[ZenSOC — Wazuh → Slack](https://github.com/zeldaim/wazuh-slack-alertbot)** | Grouping cut duplicate alerts <img src="https://img.shields.io/badge/32%E2%86%923-FF6B6B?style=flat-square" />; the entropy hypothesis came out the opposite way — recorded as such |
+
+---
+
+### 📜 Certifications
+
+<img src="https://img.shields.io/badge/RHCSA-Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white" />
+<img src="https://img.shields.io/badge/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC-Engineer%20Information%20Processing-4D96FF?style=flat-square" />
+<img src="https://img.shields.io/badge/CKA-in%20progress-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+
+---
+
+### 📰 Writing & Contact
+
+<p>
+  <a href="https://zeldaim.substack.com/"><img src="https://img.shields.io/badge/Substack-Signal%20%26%20Threat-FF6719?style=for-the-badge&logo=substack&logoColor=white" /></a>
+  <a href="https://github.com/zeldaim"><img src="https://img.shields.io/badge/GitHub-zeldaim-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:9B5DE5,25:4D96FF,50:6BCB77,75:FFD93D,100:FF6B6B&height=120&section=footer" />
+</p>
