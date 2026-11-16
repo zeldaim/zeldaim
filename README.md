@@ -1,60 +1,54 @@
 # Hi, I'm Zen 👋
 
-**Aspiring Security Monitoring Engineer** | Seoul, Korea  
-*SOC • Network Monitoring • Threat Detection*
+**Software Supply Chain Security · Detection Engineering** | Seoul, Korea
+
+I work on two connected problems: knowing what is actually running (APIs, packages, their vulnerabilities),
+and turning that knowledge into detections that are tested before they are trusted.
 
 ---
 
-## 🔍 What I'm Building
+## 🔬 What I'm Working On
 
-- 🛡 **Wazuh SIEM** — Real-time log monitoring & alert correlation
-- 📡 **Anomaly Detection** — Entropy-based network behavior analysis
-  ([wazuh-slack-alertbot](https://github.com/zeldaim/wazuh-slack-alertbot) — Shannon/ApEn on SSH brute-force)
-- 🔬 **Malware Analysis** — Incident triage & IOC extraction
-
----
-
-🤝 Open Source Contribution
-
-* 🐛 Reported issues on Wazuh official repository
-   * **[Sysmon EventID 13 arrives in archives.json but no alert generated (Wazuh 4.9.0 Docker) #35707](https://github.com/wazuh/wazuh/issues/35707)**
-      * Investigated rule chain processing difference between Security channel and Sysmon channel events
-   * **[Rules/Decoders: Custom rules using if_sid for windows_eventchannel events not firing in Wazuh 4.9.0 — if_group works as workaround #36029](https://github.com/wazuh/wazuh/issues/36029)**
-      * Identified undocumented breaking change in if_sid chaining behavior for windows_eventchannel events between 4.7.5 and 4.9.0
-      * Discovered discrepancy between wazuh-logtest output and live analysisd pipeline
-    
----    
-
-## 🎯 Focus Areas
-
-- 🖥 **Security Monitoring** — 24/7 SOC, SIEM Operation
-- 📡 **Network Analysis** — Traffic monitoring, anomaly detection
-- 🚨 **Incident Response** — Alert triage, threat containment
-- 🔵 **Blue Team** — Defensive security operations
+- **Software supply chain**
+  - API-BOM (CycloneDX) and SBOM (Syft → Dependency-Track) for the same service, linked endpoint → code path → package → CVE
+  - Reachability + VEX: of 403 unique CVEs, 309 (77%) were not reachable from any endpoint — after fixing 5 bugs in my own analyzer first
+  - GitHub Actions that regenerate the SBOM / API-BOM on pull requests and on a daily schedule
+  - Next: image signing (Cosign), provenance (SLSA), least-privilege CI
+- **Detection engineering**
+  - Wazuh rules generated from an approved OpenAPI allowlist, verified with `wazuh-logtest`
+  - Found a deployed BOLA rule that worked backwards (blocked attempts alerted, successful enumeration missed) and fixed it
+  - Response with Event-Driven Ansible: block → suspend → auto-release
+- **Infrastructure**
+  - Terraform (AWS, Azure), Docker, Kubernetes — preparing for CKA
 
 ---
 
-## 🛠 Skills
+## 🤝 Open Source
 
-- SIEM: Wazuh, Log correlation
-- Network: Packet analysis, IDS/IPS
-- Analysis: YARA, PE analysis, IOC hunting
-- Cloud: Terraform, Kubernetes, AWS (in progress)
-- Detection: YARA, entropy analysis, statistical modeling
-  
----
+Reported to the official Wazuh repository:
 
-## 📰 Newsletter
-
-**[Signal & Threat](https://zeldaim.substack.com)**  
-*Where hardware meets threat*
+- **[#35707](https://github.com/wazuh/wazuh/issues/35707)** — Sysmon EventID 13 reaches `archives.json` but no alert is generated (4.9.0 Docker)
+  - Traced the difference in rule-chain processing between Security-channel and Sysmon-channel events
+- **[#36029](https://github.com/wazuh/wazuh/issues/36029)** — Custom `if_sid` rules for `windows_eventchannel` stop firing in 4.9.0; `if_group` works as a workaround
+  - Behavior change between 4.7.5 and 4.9.0, and `wazuh-logtest` output differing from the live `analysisd` pipeline
 
 ---
 
-## 📫 Contact
+## 🛠 Selected Projects
 
-[![Substack](https://img.shields.io/badge/Substack-zeldaim-orange)](https://zeldaim.substack.com)
+| Project | What it shows |
+|---|---|
+| [multicloud-dr-petclinic](https://github.com/zeldaim/multicloud-dr-petclinic) | AWS → Azure DR (Site-to-Site VPN, DMS replication). Failover procedure re-verified locally: RTO 18.7 s, RPO 0 |
+| [soc-detection-notes](https://github.com/zeldaim/soc-detection-notes) | Wazuh home SOC lab — MITRE-based rules (T1547, T1046) and SIEM incident write-ups |
+| [wazuh-slack-alertbot](https://github.com/zeldaim/wazuh-slack-alertbot) | Wazuh → Slack alerting with Shannon / ApEn entropy for SSH brute-force |
+| API security · supply chain | API-BOM / SBOM / VEX / reachability + rule generation (public release in preparation) |
 
 ---
 
-*"Every alert tells a story. I find it."*
+## 📰 Writing
+
+**[Signal & Threat](https://zeldaim.substack.com/)** — notes on software supply chain security, application security and detection.
+
+---
+
+*Not just finding vulnerabilities — understanding why they exist and making the fix verifiable.*
