@@ -31,7 +31,9 @@
 | 🔗 | **Software supply chain** | API-BOM (CycloneDX) + SBOM (Syft → Dependency-Track) linked endpoint → code path → package → CVE. **309 of 403 CVEs (77%) unreachable** from any endpoint — measured after fixing 5 bugs in my own analyzer |
 | 🛡️ | **Detection engineering** | Wazuh rules generated from an approved OpenAPI allowlist, verified with `wazuh-logtest`. Found and fixed a deployed BOLA rule that **worked backwards** |
 | ☁️ | **Infrastructure security** | Terraform checked without a cloud account (`terraform test` + mocks, Trivy, Checkov). Replaced an `AdministratorAccess` role with split **least-privilege** roles and an IAM action checker |
-| 🚀 | **Next** | Blocking policy checks in CI · Cosign signing · SLSA provenance · OpenSSF Scorecard |
+| 🧬 | **Next: software → kernel correlation dashboard** | One view linking API endpoint → process → **libraries actually loaded at runtime (strace · eBPF)** → SBOM package → CVE → kernel. Today the kernel-layer graph is a static sketch; the goal is to replace its edges with runtime evidence |
+| 🚀 | **After that** | Signature verification (Cosign) · build provenance (SLSA) on the same graph |
+| 📘 | **Study → apply** | [openssf-study](https://github.com/zeldaim/openssf-study) — each OpenSSF concept applied to my own project and verified before / after (first: least privilege) |
 
 ---
 
