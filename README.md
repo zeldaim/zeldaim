@@ -32,7 +32,6 @@
 | 🛡️ | **Detection engineering** | Wazuh rules generated from an approved OpenAPI allowlist, verified with `wazuh-logtest`. Found and fixed a deployed BOLA rule that **worked backwards** |
 | ☁️ | **Infrastructure security** | Terraform checked without a cloud account (`terraform test` + mocks, Trivy, Checkov). Replaced an `AdministratorAccess` role with split **least-privilege** roles and an IAM action checker |
 | 🧬 | **Next: software → kernel correlation dashboard** | One view linking API endpoint → process → **libraries actually loaded at runtime (strace · eBPF)** → SBOM package → CVE → kernel. Today the kernel-layer graph is a static sketch; the goal is to replace its edges with runtime evidence |
-| 🚀 | **After that** | Signature verification (Cosign) · build provenance (SLSA) on the same graph |
 | 📘 | **Study → apply** | [openssf-study](https://github.com/zeldaim/openssf-study) — each OpenSSF concept applied to my own project and verified before / after (first: least privilege) |
 
 ---
@@ -51,34 +50,9 @@
 
 ### 🧰 Tech Stack
 
-**🔗 Supply chain · AppSec**<br>
-<img src="https://img.shields.io/badge/CycloneDX-FF6B6B?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Syft%20%2F%20Grype-FF8E72?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Dependency--Track-FFA94D?style=for-the-badge" />
-<img src="https://img.shields.io/badge/VEX-FFB703?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=trivy&logoColor=white" />
-<img src="https://img.shields.io/badge/Checkov-7B42BC?style=for-the-badge" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
-
-**🛡️ Detection · Response**<br>
-<img src="https://img.shields.io/badge/Wazuh-3595F9?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Suricata-EF8F1C?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Event--Driven%20Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
-<img src="https://img.shields.io/badge/pfSense-212121?style=for-the-badge&logo=pfsense&logoColor=white" />
-<img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge" />
-
-**☁️ Cloud · Infra**<br>
-<img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-<img src="https://img.shields.io/badge/RHEL%20(RHCSA)-EE0000?style=for-the-badge&logo=redhat&logoColor=white" />
-
-**💻 Language**<br>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B" />
-<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
-<img src="https://img.shields.io/badge/HCL-6BCB77?style=for-the-badge" />
+**🔗 Supply chain**&nbsp; <img src="https://img.shields.io/badge/CycloneDX%20%C2%B7%20VEX-FF6B6B?style=for-the-badge" /> <img src="https://img.shields.io/badge/Syft%20%C2%B7%20Grype-FF8E72?style=for-the-badge" /> <img src="https://img.shields.io/badge/Dependency--Track-FFA94D?style=for-the-badge" /> <img src="https://img.shields.io/badge/Trivy%20%C2%B7%20Checkov-1904DA?style=for-the-badge&logo=trivy&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" /><br>
+**🛡️ Detection**&nbsp; <img src="https://img.shields.io/badge/Wazuh-3595F9?style=for-the-badge" /> <img src="https://img.shields.io/badge/Event--Driven%20Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" /><br>
+**☁️ Infra**&nbsp; <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" /> <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 
 ---
 
@@ -93,13 +67,12 @@
 
 ---
 
-### 🔧 Hardware Background · Next
+### 🔧 Hardware Background
 
 | | |
 |:-:|---|
 | 🧩 | **KAIST IDEC semiconductor design training** — 67 courses · 831 h (2024.04 – 2026.03): digital design (Verilog, RTL-to-GDSII), computer architecture, AI accelerators, embedded networks (CAN · FlexRay) |
 | 📟 | **Embedded systems coursework** — in progress |
-| 🏭 | **Next: IoT / OT security project** <img src="https://img.shields.io/badge/status-planned-FFB703?style=flat-square" /> — connecting hardware knowledge with detection and supply chain security |
 
 ---
 
