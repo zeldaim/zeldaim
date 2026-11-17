@@ -61,7 +61,7 @@
 | | Project | Highlight |
 |:-:|---|---|
 | ☁️ | **[Multi-Cloud DR — AWS → Azure](https://github.com/zeldaim/multicloud-dr-petclinic)** | Site-to-Site VPN · DMS · Route 53 / CloudFront failover (team). Re-verified locally: <img src="https://img.shields.io/badge/RTO-18.7s-6BCB77?style=flat-square" /> <img src="https://img.shields.io/badge/RPO-0-4D96FF?style=flat-square" /> <img src="https://img.shields.io/badge/terraform%20test-8%2F8-9B5DE5?style=flat-square" /> |
-| 🔗 | **API Security · Supply Chain** | API-BOM / SBOM / VEX / reachability + automated Wazuh rules (team final project) <img src="https://img.shields.io/badge/release-in%20preparation-FFB703?style=flat-square" /> |
+| 🔗 | **[API Security · Supply Chain](https://github.com/zeldaim/api-security-supply-chain)** | API-BOM / SBOM / VEX / reachability + automated Wazuh rules (team final project) |
 | 🛡️ | **[SOC Detection Notes](https://github.com/zeldaim/soc-detection-notes)** | Wazuh home SOC lab — MITRE rules (T1547, T1046) and SIEM incident write-ups |
 | 🔔 | **[ZenSOC — Wazuh → Slack](https://github.com/zeldaim/wazuh-slack-alertbot)** | Grouping cut duplicate alerts <img src="https://img.shields.io/badge/32%E2%86%923-FF6B6B?style=flat-square" />; the entropy hypothesis came out the opposite way — recorded as such |
 
