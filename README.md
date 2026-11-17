@@ -78,12 +78,7 @@
 
 ### 📜 Certifications
 
-<img src="https://img.shields.io/badge/RHCSA-Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white" />
-<img src="https://img.shields.io/badge/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC-Engineer%20Information%20Processing-4D96FF?style=flat-square" />
-<img src="https://img.shields.io/badge/AWS-Advanced%20Networking%20Specialty-FF9900?style=flat-square" />
-<img src="https://img.shields.io/badge/AWS-Data%20Engineer%20Associate-FF9900?style=flat-square" />
-<img src="https://img.shields.io/badge/AWS-AI%20Practitioner-FF9900?style=flat-square" />
-<img src="https://img.shields.io/badge/CKA-in%20progress-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+**RHCSA** · **AWS Advanced Networking – Specialty** · **AWS Data Engineer – Associate** · **AWS AI Practitioner** · **정보처리기사** · CKA *(in progress)*
 
 ---
 
