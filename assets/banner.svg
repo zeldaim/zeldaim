@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
+  <rect width="1200" height="220" fill="#0B1F3A"/>
+  <g stroke="#14304F" stroke-width="1">
+    <path d="M0 55H1200M0 110H1200M0 165H1200"/>
+    <path d="M150 0V220M300 0V220M450 0V220M600 0V220M750 0V220M900 0V220M1050 0V220"/>
+  </g>
+  <rect x="72" y="62" width="4" height="96" fill="#2DD4BF"/>
+  <text x="100" y="106" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="#F1F5F9">Zen</text>
+  <text x="100" y="146" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#9FB3C8">Software Supply Chain Security · Detection Engineering</text>
+</svg>
