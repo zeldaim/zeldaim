@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/banner.svg" alt="Zen — Software Supply Chain Security · Detection Engineering" width="100%"></p>
+<p align="center"><img src="assets/banner.svg" alt="ZEN — Not just finding bugs, making fixes verifiable" width="100%"></p>
 
 I don't stop at running security tools — I check whether their results are right.
 My own analyzers and rules are tested before I trust them, and I record what failed as carefully as what worked.

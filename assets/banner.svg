@@ -1,10 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
-  <rect width="1200" height="220" fill="#0D1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <radialGradient id="glow" cx="18%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#0E7C86" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="1200" height="300" fill="#0D1117"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
   <g stroke="#161B22" stroke-width="1">
-    <path d="M0 55H1200M0 110H1200M0 165H1200"/>
-    <path d="M150 0V220M300 0V220M450 0V220M600 0V220M750 0V220M900 0V220M1050 0V220"/>
+    <path d="M0 75H1200M0 150H1200M0 225H1200"/>
+    <path d="M100 0V300M200 0V300M300 0V300M400 0V300M500 0V300M600 0V300M700 0V300M800 0V300M900 0V300M1000 0V300M1100 0V300"/>
   </g>
-  <rect x="72" y="62" width="4" height="96" fill="#2DD4BF"/>
-  <text x="100" y="106" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="#F1F5F9">Zen</text>
-  <text x="100" y="146" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#9FB3C8">Software Supply Chain Security · Detection Engineering</text>
+
+  <!-- endpoint → service → package → CVE : the chain I trace -->
+  <g fill="none" stroke="url(#edge)" stroke-width="2">
+    <path d="M780 90 L880 150 L990 110 L1100 170"/>
+    <path d="M880 150 L940 230 L1060 225"/>
+    <path d="M780 210 L880 150"/>
+  </g>
+  <g fill="#0D1117" stroke="#2DD4BF" stroke-width="2.5">
+    <circle cx="780" cy="90" r="7"/><circle cx="780" cy="210" r="7"/>
+    <circle cx="880" cy="150" r="10"/><circle cx="990" cy="110" r="7"/>
+    <circle cx="940" cy="230" r="7"/><circle cx="1060" cy="225" r="7"/>
+  </g>
+  <circle cx="1100" cy="170" r="16" fill="#F43F5E" opacity="0.35" filter="url(#soft)"/>
+  <circle cx="1100" cy="170" r="9" fill="#F43F5E"/>
+  <g font-family="Consolas, 'Fira Code', monospace" font-size="13" fill="#5B7083">
+    <text x="752" y="72">GET /api/v1/users/{id}</text>
+    <text x="1122" y="175">CVE</text>
+  </g>
+
+  <rect x="72" y="78" width="5" height="148" fill="#2DD4BF"/>
+  <text x="100" y="140" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="74" font-weight="800" letter-spacing="6" fill="#F8FAFC">ZEN</text>
+  <text x="102" y="180" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#2DD4BF">Not just finding bugs — making fixes verifiable.</text>
+  <text x="102" y="215" font-family="Consolas, 'Fira Code', monospace" font-size="16" letter-spacing="1" fill="#8B9DB0">SUPPLY CHAIN SECURITY  ·  DETECTION ENGINEERING  ·  CLOUD</text>
 </svg>
