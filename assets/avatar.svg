@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="460" viewBox="0 0 460 460">
+  <defs>
+    <radialGradient id="bg" cx="58%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#14605F"/>
+      <stop offset="0.45" stop-color="#0E2A33"/>
+      <stop offset="1" stop-color="#0D1117"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="460" height="460" fill="url(#bg)"/>
+
+  <g fill="#05080D">
+    <!-- 포니테일 -->
+    <path d="M168 222 C120 228 96 262 92 300 C88 338 104 372 92 404 C122 384 132 350 136 318 C140 290 152 262 182 246 Z"/>
+    <!-- 어깨 · 목 -->
+    <path d="M40 460 C52 404 104 372 170 362 L214 352 L214 300 L262 300 L270 350 C318 356 372 380 400 460 Z"/>
+    <!-- 머리 · 옆얼굴 (오른쪽을 봄) -->
+    <path d="M168 226 C162 270 176 306 214 326 C232 334 262 332 286 336 C294 337 298 336 300 332
+             C318 328 330 320 334 310 L340 300 C346 298 348 292 344 288 L340 284
+             C346 282 350 276 346 272 L350 266 C358 264 362 258 356 252
+             L346 238 C346 226 342 216 334 210 Z"/>
+    <!-- 모자 크라운 -->
+    <path d="M156 228 C150 176 194 138 252 136 C300 134 336 160 342 212 Z"/>
+    <!-- 모자 챙 -->
+    <path d="M316 206 C352 200 392 202 414 214 C392 222 356 224 320 222 Z"/>
+  </g>
+
+  <!-- 윤곽 빛 (림 라이트) -->
+  <g fill="none" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" opacity="0.85" filter="url(#glow)">
+    <path d="M334 222 L346 238 L356 252 C362 258 358 264 350 266 L346 272 C350 276 346 282 340 284 L344 288 C348 292 346 298 340 300 L334 310 C330 320 318 328 300 332"/>
+    <path d="M320 207 C356 201 392 203 414 214"/>
+    <path d="M200 140 C238 128 300 132 334 168"/>
+    <path d="M276 352 C324 360 374 386 398 452" opacity="0.6"/>
+    <path d="M96 300 C92 336 104 368 94 400" opacity="0.35"/>
+  </g>
+
+  <!-- 안경 -->
+  <g filter="url(#glow)">
+    <path d="M298 238 L332 236 C336 236 338 239 337 243 L334 254 C333 258 330 260 326 260 L304 260 C300 260 297 257 297 253 Z"
+          fill="#2DD4BF" fill-opacity="0.18" stroke="#2DD4BF" stroke-width="2.5"/>
+    <path d="M298 244 L232 240" stroke="#2DD4BF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M306 243 L322 241" stroke="#E6FFFB" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- 모자 로고 점 -->
+  <circle cx="300" cy="182" r="5" fill="#2DD4BF" filter="url(#glow)"/>
+</svg>
