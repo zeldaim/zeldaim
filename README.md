@@ -19,7 +19,7 @@ Career switcher into security, with a hardware background (KAIST IDEC, 831 h of 
 | Project | Highlight |
 |---|---|
 | [**Multi-Cloud DR — AWS → Azure**](https://github.com/zeldaim/multicloud-dr-petclinic) | Site-to-Site VPN · DMS · Route 53 / CloudFront failover (team). Re-verified locally: RTO 18.7 s · RPO 0 · `terraform test` 8/8 |
-| [**API Security · Supply Chain**](https://github.com/zeldaim/api-security-supply-chain) | API-BOM / SBOM / VEX / reachability + automated Wazuh rules (team final project). Tested on an app not used in development: VAmPI failed (off-spec probe recall 60%) → fixed in v2.1 (93%, 0 / 362 false alerts) |
+| [**API Security · Supply Chain**](https://github.com/zeldaim/api-security-supply-chain) | API-BOM / SBOM / VEX / reachability + automated Wazuh rules (team final project). Tested on apps not used in development: VAmPI failed (off-spec probe recall 60%) → fixed in v2.1 (93%) → **4th unseen app DVRA, config only: 15 / 15 probes caught by rules, real BOLA flagged high by ML** (ML release gate narrowly missed — recorded as is). Grafana dashboard built as code |
 | [**SOC Detection Notes**](https://github.com/zeldaim/soc-detection-notes) | Wazuh home SOC lab — MITRE rules (T1547, T1046) and SIEM incident write-ups |
 | [**ZenSOC — Wazuh → Slack**](https://github.com/zeldaim/wazuh-slack-alertbot) | Grouping cut duplicate alerts 32 → 3; the entropy hypothesis came out the opposite way — recorded as such |
 
