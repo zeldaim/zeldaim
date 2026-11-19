@@ -23,6 +23,7 @@ Career switcher into security, with a hardware background (KAIST IDEC, 831 h of 
 | [**API Defense Lab**](https://github.com/zeldaim/api-defense-lab) | A practice range for API *defenders*: a light core (vulnerable DVRA + nginx auto-block + Sigma shadow-API rules + ML BOLA detection + answer key + scorer, ~220 MB RAM) plus optional modules by job — **Wazuh** for SIEM rule authoring, **ES + Grafana** for live monitoring. Fresh-clone runs: probe blocked in 2–3 s, BOLA in ~6.5 s, **0 / 20 normal users blocked** after fixing a first-run false positive. Sigma and Wazuh verdicts match line by line (15 / 15). [Looking for testers](https://github.com/zeldaim/api-defense-lab#help-test-api-defense-lab) on Linux / macOS |
 | [**SOC Detection Notes**](https://github.com/zeldaim/soc-detection-notes) | Wazuh home SOC lab — MITRE rules (T1547, T1046) and SIEM incident write-ups |
 | [**ZenSOC — Wazuh → Slack**](https://github.com/zeldaim/wazuh-slack-alertbot) | Grouping cut duplicate alerts 32 → 3; the entropy hypothesis came out the opposite way — recorded as such |
+| [**Enterprise Network Lab**](https://github.com/zeldaim/enterprise-network-lab) | Multi-site network in Packet Tracer: VLSM, OSPF multi-area with dual-link cost failover (primary link down → backup in one lost ping), Router-on-a-Stick vs SVI, inter-VLAN ACL (ICMP 3/13), static + OSPF split routing — 7 problems and fixes logged |
 
 ### Open source
 
